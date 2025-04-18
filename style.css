@@ -23,7 +23,7 @@ body {
 .logo svg {
   display: block;
   margin: 0 auto;
-  max-width: 80px;
+  max-width: 100px;
   height: auto;
 }
 
