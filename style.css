@@ -1,0 +1,40 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #0f111a;
+  color: #d8d0c4;
+  font-family: Georgia, serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+}
+
+.container {
+  max-width: 90%;
+}
+
+.logo {
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #6ca0cc;
+  line-height: 1.4;
+  margin-bottom: 40px;
+}
+
+.loading {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #f3eada;
+  margin-bottom: 40px;
+}
+
+.footer {
+  font-size: 1rem;
+  color: #6ca0cc;
+}
