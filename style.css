@@ -36,10 +36,26 @@ h2 {
   font-size: 1em;
 }
 
+#toggleMode {
+  margin-top: 20px;
+  background-color: #1e293b;
+  color: #cbd5e1;
+  border: 1px solid #334155;
+  border-radius: 6px;
+  padding: 10px 16px;
+  font-size: 0.9em;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+#toggleMode:hover {
+  background-color: #334155;
+}
+
 /* PC/Desktop View */
 @media screen and (min-width: 768px) {
   .logo {
-    height: 30vh;
+    height: 30v;
   }
 
   h2 {
