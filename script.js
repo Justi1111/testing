@@ -19,6 +19,12 @@ document.getElementById("toggleMode").addEventListener("click", () => {
   document.getElementById("toggleMode").innerText = preciseMode
     ? "Switch to Normal Mode"
     : "Switch to Precise Mode";
+
+  // Trigger Hornet Jump
+  const hornet = document.getElementById("hornetJump");
+  hornet.classList.remove("active");
+  void hornet.offsetWidth; // trigger reflow
+  hornet.classList.add("active");
 });
 
 setInterval(updateProbability, 50);
