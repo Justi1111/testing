@@ -1,0 +1,56 @@
+body {
+  background-color: #0a0e17;
+  color: #cbd5e1;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  padding: 60px 20px;
+  margin: 0;
+}
+
+.logo {
+  height: 25vh;
+  position: relative;
+  top: 50px;
+}
+
+h2 {
+  color: #5f9edc;
+  font-size: 1.5em;
+  line-height: 1.4em;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+#probability {
+  font-family: 'Inter', serif;
+  font-weight: 700;
+  margin: 40px 0;
+  color: #ebe4d2;
+
+  font-size: clamp(3rem, 8vw, 5rem);
+  word-wrap: break-word;
+}
+
+.footer {
+  color: #6db1d9;
+  font-size: 1em;
+}
+
+/* PC/Desktop View */
+@media screen and (min-width: 768px) {
+  .logo {
+    height: 30vh;
+  }
+
+  h2 {
+    font-size: 2em;
+  }
+
+  #probability {
+    font-size: 5em;
+  }
+
+  .footer {
+    font-size: 1.2em;
+  }
+}
