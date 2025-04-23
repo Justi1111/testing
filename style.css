@@ -11,6 +11,7 @@ body {
   height: 25vh;
   position: relative;
   top: 50px;
+  margin-bottom: 30px;
 }
 
 h2 {
@@ -22,11 +23,10 @@ h2 {
 }
 
 #probability {
-  font-family: 'Inter', serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 700;
   margin: 40px 0;
   color: #ebe4d2;
-
   font-size: clamp(3rem, 8vw, 5rem);
   word-wrap: break-word;
 }
@@ -51,7 +51,44 @@ h2 {
   background-color: #334155;
 }
 
-/* PC/Desktop View */
+/* Hornet jump animation */
+.hornet-jump {
+  position: fixed;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 100px;
+  opacity: 0;
+  pointer-events: none;
+  z-index: 999;
+  transition: opacity 0.3s ease;
+}
+
+.hornet-jump.active {
+  animation: hornetBounce 1s ease-out;
+  opacity: 1;
+}
+
+@keyframes hornetBounce {
+  0% {
+    transform: translateX(-50%) translateY(0);
+  }
+  30% {
+    transform: translateX(-50%) translateY(-60px);
+  }
+  60% {
+    transform: translateX(-50%) translateY(0);
+  }
+  80% {
+    transform: translateX(-50%) translateY(-20px);
+  }
+  100% {
+    transform: translateX(-50%) translateY(0);
+    opacity: 0;
+  }
+}
+
+/* Desktop adjustments */
 @media screen and (min-width: 768px) {
   .logo {
     height: 30vh;
